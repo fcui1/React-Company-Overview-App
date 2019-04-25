@@ -1,0 +1,104 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 0px;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+
+ .btn-primary,
+.navbar{
+  background-color:#5677fc;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white !important;
+}
+.navbar-brand,
+.navbar a{
+  color:white !important;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight:400;
+}
+.btn:hover,
+.navbar-brand:hover,
+.navbar-nav > li > a:hover{
+  background-color:#4059bd!important;
+}
+.navbar-brand{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 180%;
+  font-weight:700;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus{
+  background-color: #e7e7e736;
+}
+
+/*
+ * Main content
+ */
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight:400;
+}
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+.main .overview-table{
+  max-height:300px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+.main .overview-table .table{
+  padding-bottom:0px;
+  margin-bottom:0px;
+}
+.table > thead > tr > th{
+  background-color:#5677fc;
+  color:white;
+  font-weight:400!important;
+}
+
+.table{
+  border-radius:5px;
+}
+
+footer{
+  text-align: center;
+  padding: 50px 50px 100px 50px;
+  background-color:rgb(31, 31, 31);
+  color:white;
+  position: relative;
+  clear:both;
+}
